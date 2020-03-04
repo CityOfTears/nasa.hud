@@ -1,0 +1,43 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speech Recording</title>
+</head>
+<body>
+	<script src="js/anycontrol.js"></script>
+<script>
+  const ctrl = new anycontrol();
+
+  ctrl.addCommand("next step", function () {
+    alert('next step');
+  });
+    ctrl.addCommand("next steps", function () {
+    alert('next steps');
+  });
+  
+    ctrl.addCommand("previous step", function () {
+    alert('previous step');
+  });
+  
+      ctrl.addCommand("previous steps", function () {
+    alert('previous steps');
+  });
+  console.log(ctrl);
+  ctrl.start();
+</script>
+<h1>
+Matt E's voice control demo
+</h1>
+<p>From the project description, as priority number 2: Make the HUD respond to voice commands "next step(s)" and "previous step(s)"</p>
+<p>Voice commands</p>
+<ul>
+<li>Next Step</li>
+<li>Next Steps</li>
+<li>Previous Step</li>
+<li>Previous Steps</li>
+</ul>
+<p>Expected output: Browser alert with the command</p>
+</body>
+</html>
